@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SexiLog, Elasticsearch MeetUp</title>
+
+		<meta name="description" content="SexiLog presentation at Elasticsearch MeetUp">
+		<meta name="author" content="sexilog.fr">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="img/Picture1.png">
+				</section>
+
+				<section>
+					<h2>RFC 3164</h2>
+					<blockquote>
+						&ldquo;Since the beginning, life has relied upon the transmission of messages.&rdquo;
+					</blockquote>
+					<blockquote>
+						&ldquo;In many cases, these messages are informative to other units and require no acknowledgement.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Who</h2>
+					<p class="twitter">
+						<a href="http://twitter.com/vmdude_fr">@vmdude_fr</a><br />
+						<a href="http://twitter.com/hypervisor_fr">@hypervisor_fr</a><br />
+						<a href="http://twitter.com/sexilog_fr">@sexilog_fr</a>
+					</p>
+
+					<p>Come get some on <span class="hashtag">#sexilog</span> (Twitter and IRC)</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>What</h2>
+						<p>SexiLog is a specific ELK virtual appliance designed for vSphere environment. It’s pre-configured and heavily tuned for VMware ESXi logs. Once connected to your network, set SexiLog as syslog remote host and relax.</p>
+						<aside class="notes">
+    Put your speaker notes here.
+    You can see them pressing 's'.
+</aside>
+					</section>
+
+					<section>
+						<h2>CookBook</h2>
+						<img width="100%" data-src="img/cookbook.png" alt="CookBook">
+					</section>
+
+					<section>
+						<h2>GitHub</h2>
+						<img width="100%" data-src="img/github.png" alt="GitHub">
+					</section>
+				</section>
+
+				<section>
+					<h2>Blueprint</h2>
+					<img width="100%" data-src="img/features.png" alt="Features">
+				</section>
+
+				<section>
+					<section>
+						<h2>Why</h2>
+						<ul>
+							<li>Nothing fit better</li>
+							<li>Single pane of glass</li>
+							<li>Correlation</li>
+							<li>Poor vCenter visualization</li>
+							<li>VIEvents vs SYSLOG = iceberg effect</li>
+						</ul>
+					</section>
+
+					<section>
+						<img width="60%" data-src="img/iceberg.png" alt="Iceberg">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<img width="100%" data-src="img/php-syslog-ng.png" alt="PHP Syslog-NG">
+					</section>
+
+					<section>
+						<img width="100%" data-src="img/loganalyzer.png" alt="LogAnalyzer">
+					</section>
+
+					<section>
+						<img width="100%" data-src="img/graylog2.png" alt="Graylog2">
+					</section>
+
+					<section>
+						<img width="100%" data-src="img/graylog2_microanalysis.png" alt="Graylog2">
+					</section>
+
+					<section>
+						<img width="100%" data-src="img/graylog2_downtime.png" alt="Graylog2">
+					</section>
+				</section>
+
+				<section>
+					<h2>How</h2>
+					<ul>
+						<li>Search</li>
+						<li>SexiBoards</li>
+						<li>Realtime monitoring</li>
+						<li>e-mail alerts</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>SexiHome</h2>
+						<img width="100%" data-src="img/sexihome.png" alt="SexiHome">
+					</section>
+
+					<section>
+						<h2>ESXi DCUI</h2>
+						<img width="100%" data-src="img/dcui.png" alt="ESXi DCUI">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Snapshot quiesing issues</h2>
+						<img width="100%" data-src="img/quiescing.png">
+					</section>
+
+					<section>
+						<h2>vMotion switchover time</h2>
+						<img width="100%" data-src="img/vmotiondowntime.png">
+					</section>
+
+					<section>
+						<h2>Veeam job timeline</h2>
+						<img width="100%" data-src="img/veeam.png">
+					</section>
+
+					<section>
+						<h2>Storage array latency</h2>
+						<img width="100%" data-src="img/iorm.png">
+					</section>
+
+					<section>
+						<h2>vCenter SQL latency</h2>
+						<img width="100%" data-src="img/sqltoolong.png">
+					</section>
+
+					<section>
+						<h2>vMotion tracking</h2>
+						<img width="100%" data-src="img/immigrating.png">
+					</section>
+
+					<section>
+						<h2>SIOC latency vs qdepth</h2>
+						<img width="100%" data-src="img/queuedepth.png">
+					</section>
+				</section>
+
+				<section>
+					<h2>Realtime alerts</h2>
+					<img width="100%" data-src="img/kommandantur.png">
+				</section>
+
+				<section>
+					<section>
+						<h2>Riemann notification</h2>
+						<img width="100%" data-src="img/mail.png" alt="Riemann notification">
+					</section>
+
+					<section>
+						<h2>Riemann notification</h2>
+						<img width="100%" data-src="img/mail2.png" alt="Riemann notification">
+					</section>
+				</section>
+
+				<section>
+					<h2>Where</h2>
+					<ul>
+						<li>Kibana 4</li>
+						<li>Easy Updater</li>
+						<li>Alerts Dashboard</li>
+						<li>SexiLog to SexiLog (lumberjack)</li>
+						<li>SexiLog for XenApp/NetApp/...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Kibana4 Kommandantur</h2>
+					<img width="100%" data-src="img/kibana4.png" alt="Kibana4">
+				</section>
+
+				<section>
+					<h2>SexiStats</h2>
+					<ul>
+						<li>1000+ downloads in 3 days</li>
+						<li>3000+ downloads in 2 months</li>
+						<li>~20 downloads per day</li>
+					</ul>
+					<img width="100%" data-src="img/sexilog_nginx.png" alt="SexiStats">
+				</section>
+
+				<section>
+					<h2>Good feedback...</h2>
+					<img width="100%" data-src="img/tweet-ok.png">
+				</section>
+
+				<section>
+					<h2>...Not so good</h2>
+					<img width="100%" data-src="img/tweet-ko.png">
+				</section>
+
+				<section>
+					<img data-src="img/hannibal.jpg">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
